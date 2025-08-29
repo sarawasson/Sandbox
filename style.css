@@ -1,0 +1,227 @@
+/* CSS 23 — Final integrated version with email callout block above footer */
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background-image: url('background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #1F242E;
+  margin: 0;
+  padding: 0;
+  font-size: 19px;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+  background-color: transparent;
+}
+
+header {
+  text-align: center;
+  padding: 2.5rem 1rem 0.5rem 1rem;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.4px;
+}
+
+.intro {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  text-align: center;
+  padding-top: 0;
+}
+
+main {
+  padding: 1rem 4vw 4rem 4vw;
+  background: transparent;
+}
+
+/* Content block */
+.content-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  gap: 2rem;
+  background: transparent !important;
+}
+
+.content-block .image,
+.content-block .text {
+  flex: 1 1 400px;
+  max-width: 500px;
+  background: transparent;
+}
+
+.content-block .image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.content-block .text {
+  font-size: 19px;
+  letter-spacing: 0.1px;
+  line-height: 1.7;
+  padding: 1rem;
+  background: transparent;
+}
+
+.content-block.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Coming soon line */
+.coming-soon {
+  text-align: center;
+  font-style: italic;
+  font-size: 17px;
+  margin-top: 4rem;
+  background: transparent;
+}
+
+/* Email callout block */
+.email-callout {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: #1F242E;
+}
+
+.email-callout a {
+  color: #1F242E;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.email-callout a:hover {
+  text-decoration: underline;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #1F242E;
+  width: 40%;
+  margin: 2rem auto;
+}
+
+/* Footer links */
+footer {
+  text-align: center;
+  padding: 2.5rem 1rem 2rem 1rem;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: #1F242E;
+  background: transparent;
+}
+
+footer a {
+  color: #1F242E;
+  text-decoration: none;
+  margin: 0 0.7rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .intro {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 18px;
+  }
+
+  .content-block .text {
+    font-size: 18px;
+  }
+
+  .content-block .image img {
+    max-width: 220px;
+  }
+
+  .email-callout {
+    font-size: 20px;
+  }
+
+  .email-callout a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  .intro {
+    font-size: 19px;
+    margin-bottom: 1.2rem;
+  }
+
+  body {
+    font-size: 17px;
+  }
+
+  footer {
+    font-size: 17px;
+  }
+
+  .content-block .text {
+    font-size: 17px;
+  }
+
+  .content-block .image img {
+    max-width: 200px;
+  }
+
+  .email-callout {
+    font-size: 19px;
+  }
+
+  .email-callout a {
+    font-size: 19px;
+  }
+}
