@@ -1,5 +1,3 @@
-CSS 24
-
 /* === Page Background Classes === */
 /* Default: Blue lace agate for Research/home */
 body {
@@ -240,4 +238,50 @@ footer a:hover {
   .email-callout a {
     font-size: 19px;
   }
+}
+
+.portal-cards {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  margin: 3rem 0 3rem 0;
+  flex-wrap: wrap;
+}
+
+.portal-card {
+  text-align: center;
+}
+
+.portal-card a {
+  font-size: 26px;
+  letter-spacing: 2px;
+  color: #1F242E;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+}
+
+.portal-underline {
+  height: 3px;
+  width: 90px;
+  margin: 0.5em auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Underline color variants */
+.portal-underline.research {
+  background: #78B1CC; /* blue lace agate - tweak as needed */
+}
+.portal-underline.tutoring {
+  background: #77C6EE; /* blue sky - tweak as needed */
+}
+.portal-underline.medical {
+  background: #A7B7A3; /* fern/stone - tweak as needed */
+}
+
+/* Optional: hover effect */
+.portal-card a:hover + .portal-underline,
+.portal-card a:focus + .portal-underline {
+  height: 4px;
+  filter: brightness(1.2);
 }
