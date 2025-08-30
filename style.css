@@ -30,28 +30,28 @@ body.medical-page {
 /* === Typography & Layout === */
 header {
   text-align: center;
-  padding: 2.5rem 1rem 0.15rem 1rem; /* bottom padding reduced */
+  padding: 2.5rem 1rem 0.08rem 1rem; /* EVEN LESS bottom padding */
 }
 
 h1 {
   font-size: 42px;
   font-weight: 600;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.06rem; /* LESS space below */
 }
 
 /* --- Tagline boost! --- */
 h2 {
   font-size: 27px;
   font-weight: 400;
-  margin-bottom: 0.25rem;  /* tighter under tagline */
+  margin-bottom: 0.12rem;  /* Tighter under tagline */
   letter-spacing: 0.5px;
 }
 
 .intro {
   font-size: 20px;
   font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 1.1rem; /* slightly tighter */
+  margin-top: 0.62rem; /* More space above intro */
+  margin-bottom: 1.12rem; /* Slightly more space below intro */
   letter-spacing: 0.3px;
   line-height: 1.5;
   text-align: center;
@@ -59,7 +59,7 @@ h2 {
 }
 
 .intro-narrow {
-  max-width: 900px;   /* wider! */
+  max-width: 1030px;   /* wider for big screens, as requested */
   margin-left: auto;
   margin-right: auto;
 }
@@ -157,7 +157,7 @@ main {
   text-align: center;
   font-style: italic;
   font-size: 17px;
-  margin-top: 0.32rem;  /* much less space */
+  margin-top: 0.13rem;  /* Even less space above */
   background: transparent;
 }
 
