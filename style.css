@@ -1,5 +1,5 @@
-/* CSS 23 — Final integrated version with email callout block above footer */
-
+/* === Page Background Classes === */
+/* Default: Blue lace agate for Research/home */
 body {
   font-family: 'Cormorant Garamond', serif;
   background-image: url('background.png');
@@ -16,6 +16,20 @@ body {
   background-color: transparent;
 }
 
+/* Tutoring: blue sky background */
+body.tutoring-page {
+  background-image: url('sky.png'); 
+}
+
+/* Medical Writing: Yet another background */
+body.medical-page {
+  background-image: url('medical-bg.png');  /* change this to your medical writing background image filename */
+}
+
+/* (Add more backgrounds if you like—just add another body.class { ... } block) */
+
+
+/* === Typography & Layout === */
 header {
   text-align: center;
   padding: 2.5rem 1rem 0.5rem 1rem;
