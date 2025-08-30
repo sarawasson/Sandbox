@@ -88,7 +88,7 @@ main {
 /* Default: NO padding on images (tutoring, medical, etc) */
 .content-block .image img {
   width: 100%;
-  max-width: 200px;
+  max-width: 400px;  /* Increased from 200px */
   height: auto;
   display: block;
   margin: 0;
@@ -96,6 +96,7 @@ main {
   border-radius: 5px;
   background: transparent;
 }
+
 
 /* ON RESEARCH/HOME ONLY: images get padding */
 body:not(.tutoring-page):not(.medical-page) .content-block .image img {
