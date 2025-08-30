@@ -86,12 +86,32 @@ main {
   background: transparent;
 }
 
+/* Default: Padded images for Research/Home */
 .content-block .image img {
   width: 100%;
   max-width: 300px;
   height: auto;
   display: block;
   margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 5px;
+  background: transparent;
+}
+
+/* OVERRIDE for Tutoring page: remove padding and shrink image */
+body.tutoring-page .content-block .image img {
+  padding: 0 !important;
+  max-width: 180px !important;
+  margin: 0.6rem auto 1rem auto !important;
+  border-radius: 5px;
+}
+
+/* OVERRIDE for Medical Writing page: remove padding and shrink image */
+body.medical-page .content-block .image img {
+  padding: 0 !important;
+  max-width: 180px !important;
+  margin: 0.6rem auto 1rem auto !important;
+  border-radius: 5px;
 }
 
 .content-block .text {
@@ -239,6 +259,10 @@ footer, main, html {
   .content-block .image img { max-width: 220px; }
   .email-callout { font-size: 20px; }
   .email-callout a { font-size: 20px; }
+  body.tutoring-page .content-block .image img,
+  body.medical-page .content-block .image img {
+    max-width: 140px !important;
+  }
 }
 @media (max-width: 480px) {
   h1 { font-size: 30px; }
@@ -251,4 +275,8 @@ footer, main, html {
   .content-block .image img { max-width: 200px; }
   .email-callout { font-size: 19px; }
   .email-callout a { font-size: 19px; }
+  body.tutoring-page .content-block .image img,
+  body.medical-page .content-block .image img {
+    max-width: 120px !important;
+  }
 }
