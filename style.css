@@ -1,3 +1,5 @@
+CSS 24
+
 /* === Page Background Classes === */
 /* Default: Blue lace agate for Research/home */
 body {
@@ -16,9 +18,9 @@ body {
   background-color: transparent;
 }
 
-/* Tutoring: blue sky background */
+/* Tutoring: Sky background*/
 body.tutoring-page {
-  background-image: url('sky.png'); 
+  background-image: url('sky.jpg');  
 }
 
 /* Medical Writing: Yet another background */
