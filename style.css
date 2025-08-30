@@ -85,19 +85,23 @@ main {
   background: transparent;
 }
 
-/* Images: Remove padding, use consistent max width, let them breathe */
+/* Default: NO padding on images (tutoring, medical, etc) */
 .content-block .image img {
   width: 100%;
-  max-width: 230px;
+  max-width: 200px;
   height: auto;
   display: block;
-  margin: 0.8rem auto 0.8rem auto;
+  margin: 0;
+  padding: 0;
   border-radius: 5px;
   background: transparent;
-  padding: 0;  /* No padding! */
 }
 
-/* NO special rules for tutoring or medical—images always the same */
+/* ON RESEARCH/HOME ONLY: images get padding */
+body:not(.tutoring-page):not(.medical-page) .content-block .image img {
+  padding: 1.2rem;
+}
+
 .content-block .text {
   font-size: 19px;
   letter-spacing: 0.1px;
@@ -238,7 +242,7 @@ footer, main, html {
   body { font-size: 18px; }
   footer { font-size: 18px; }
   .content-block .text { font-size: 18px; }
-  .content-block .image img { max-width: 170px; }
+  .content-block .image img { max-width: 120px; }
   .email-callout { font-size: 20px; }
   .email-callout a { font-size: 20px; }
 }
@@ -250,7 +254,7 @@ footer, main, html {
   body { font-size: 17px; }
   footer { font-size: 17px; }
   .content-block .text { font-size: 17px; }
-  .content-block .image img { max-width: 120px; }
+  .content-block .image img { max-width: 80px; }
   .email-callout { font-size: 19px; }
   .email-callout a { font-size: 19px; }
 }
