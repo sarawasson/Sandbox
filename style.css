@@ -23,11 +23,8 @@ body.tutoring-page {
 
 /* Medical Writing: Yet another background */
 body.medical-page {
-  background-image: url('medical-bg.png');  /* change this to your medical writing background image filename */
+  background-image: url('medical-bg.png');
 }
-
-/* (Add more backgrounds if you like—just add another body.class { ... } block) */
-
 
 /* === Typography & Layout === */
 header {
@@ -41,18 +38,19 @@ h1 {
   margin-bottom: 0.2rem;
 }
 
+/* --- Tagline boost! --- */
 h2 {
-  font-size: 21px;
-  font-weight: 500;
-  margin-bottom: 0.2rem;
-  letter-spacing: 0.4px;
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 1.1rem;
+  letter-spacing: 0.5px;
 }
 
 .intro {
   font-size: 20px;
   font-weight: 400;
   margin-top: 0;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.3rem;
   letter-spacing: 0.3px;
   line-height: 1.5;
   text-align: center;
@@ -102,12 +100,58 @@ main {
   flex-direction: row-reverse;
 }
 
-/* Coming soon line */
+/* === PORTAL CARDS === */
+.portal-cards {
+  display: flex;
+  gap: 2.2rem; /* Was 2.5rem */
+  justify-content: center;
+  margin: 1.6rem 0 1.8rem 0;   /* Was 3rem 0 3rem 0 */
+  flex-wrap: wrap;
+}
+
+.portal-card {
+  text-align: center;
+}
+
+.portal-card a {
+  font-size: 26px;
+  letter-spacing: 2px;
+  color: #1F242E;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+}
+
+.portal-underline {
+  height: 3px;
+  width: 90px;
+  margin: 0.5em auto 0 auto;
+  border-radius: 2px;
+}
+
+.portal-underline.research {
+  background: #78B1CC;
+}
+.portal-underline.tutoring {
+  background: #77C6EE;
+}
+.portal-underline.medical {
+  background: #A7B7A3;
+}
+
+/* Optional: hover effect */
+.portal-card a:hover + .portal-underline,
+.portal-card a:focus + .portal-underline {
+  height: 4px;
+  filter: brightness(1.2);
+}
+
+/* Coming soon line — shrink the gap above */
 .coming-soon {
   text-align: center;
   font-style: italic;
   font-size: 17px;
-  margin-top: 4rem;
+  margin-top: 1.1rem;  /* Was 4rem, now gentle! */
   background: transparent;
 }
 
@@ -166,122 +210,59 @@ footer a:hover {
   h1 {
     font-size: 36px;
   }
-
   h2 {
-    font-size: 20px;
+    font-size: 23px;
   }
-
   .intro {
     font-size: 20px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
   }
-
   body {
     font-size: 18px;
   }
-
   footer {
     font-size: 18px;
   }
-
   .content-block .text {
     font-size: 18px;
   }
-
   .content-block .image img {
     max-width: 220px;
   }
-
   .email-callout {
     font-size: 20px;
   }
-
   .email-callout a {
     font-size: 20px;
   }
 }
-
 @media (max-width: 480px) {
   h1 {
     font-size: 30px;
   }
-
   h2 {
     font-size: 19px;
   }
-
   .intro {
     font-size: 19px;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
   }
-
   body {
     font-size: 17px;
   }
-
   footer {
     font-size: 17px;
   }
-
   .content-block .text {
     font-size: 17px;
   }
-
   .content-block .image img {
     max-width: 200px;
   }
-
   .email-callout {
     font-size: 19px;
   }
-
   .email-callout a {
     font-size: 19px;
   }
-}
-
-.portal-cards {
-  display: flex;
-  gap: 2.5rem;
-  justify-content: center;
-  margin: 3rem 0 3rem 0;
-  flex-wrap: wrap;
-}
-
-.portal-card {
-  text-align: center;
-}
-
-.portal-card a {
-  font-size: 26px;
-  letter-spacing: 2px;
-  color: #1F242E;
-  text-decoration: none;
-  font-weight: 600;
-  display: block;
-}
-
-.portal-underline {
-  height: 3px;
-  width: 90px;
-  margin: 0.5em auto 0 auto;
-  border-radius: 2px;
-}
-
-/* Underline color variants */
-.portal-underline.research {
-  background: #78B1CC; /* blue lace agate - tweak as needed */
-}
-.portal-underline.tutoring {
-  background: #77C6EE; /* blue sky - tweak as needed */
-}
-.portal-underline.medical {
-  background: #A7B7A3; /* fern/stone - tweak as needed */
-}
-
-/* Optional: hover effect */
-.portal-card a:hover + .portal-underline,
-.portal-card a:focus + .portal-underline {
-  height: 4px;
-  filter: brightness(1.2);
 }
