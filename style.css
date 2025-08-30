@@ -26,6 +26,11 @@ body.medical-page {
   background-image: url('greylaceagate.jpg');
 }
 
+/* AI Education: light peach crystal background */
+body.ai-educ-page {
+  background-image: url('lightpeachcrystal.jpg');
+}
+
 /* === Typography & Layout === */
 header {
   text-align: center;
