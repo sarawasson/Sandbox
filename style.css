@@ -1,4 +1,5 @@
-/* === css 44 Page Background Classes === */
+/* === CSS 46 === */
+/* === Page Background Classes === */
 body {
   font-family: 'Cormorant Garamond', serif;
   background-image: url('background.png');
@@ -34,31 +35,31 @@ body.ai-educ-page {
 /* === Typography & Layout === */
 header {
   text-align: center;
-  padding: 1.5rem 1rem 0.1rem 1rem;    /* REDUCED top padding */
+  padding: 0.18rem 1rem 0rem 1rem;   /* ULTRA TIGHT gap */
 }
 
 h1 {
   font-size: 42px;
   font-weight: 600;
-  margin-bottom: 0.05rem;               /* Slightly larger but still tight */
+  margin-bottom: 0.01rem;  /* Zero gap below title */
 }
 
 h2 {
   font-size: 27px;
   font-weight: 400;
-  margin-bottom: 0.10rem;
+  margin-bottom: 0.07rem; /* Ultra tight gap below tagline */
   letter-spacing: 0.5px;
 }
 
-/* -- NEW: Line above nav bar -- */
+/* -- NEW: Soft, short, subtle line above nav bar -- */
 .hr-nav-divider {
   border: none;
-  border-top: 1.5px solid #1F242E;
-  width: 48%;
-  margin: 1.0rem auto 1.6rem auto;
-  opacity: 0.70;
+  border-top: 1px solid #A7B7A3;  /* Very pale */
+  width: 56px;                    /* Short & elegant */
+  margin: 0.22rem auto 1.0rem auto; /* Tight vertical gap */
+  opacity: 0.21;                  /* Extra subtle fade */
+  border-radius: 1px;
 }
-
 /* -- End new line -- */
 
 .intro {
@@ -104,7 +105,7 @@ main {
 /* Default: NO padding on images (tutoring, medical, etc) */
 .content-block .image img {
   width: 100%;
-  max-width: 400px;  /* Increased from 200px */
+  max-width: 400px;
   height: auto;
   display: block;
   margin: 0;
@@ -112,8 +113,6 @@ main {
   border-radius: 5px;
   background: transparent;
 }
-
-
 
 /* ON RESEARCH/HOME ONLY: images get padding */
 body:not(.tutoring-page):not(.medical-page) .content-block .image img {
