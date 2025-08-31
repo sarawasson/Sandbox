@@ -34,21 +34,32 @@ body.ai-educ-page {
 /* === Typography & Layout === */
 header {
   text-align: center;
-  padding: 2.2rem 1rem 0.08rem 1rem;
+  padding: 1.5rem 1rem 0.1rem 1rem;    /* REDUCED top padding */
 }
 
 h1 {
   font-size: 42px;
   font-weight: 600;
-  margin-bottom: 0.03rem;
+  margin-bottom: 0.05rem;               /* Slightly larger but still tight */
 }
 
 h2 {
   font-size: 27px;
   font-weight: 400;
-  margin-bottom: 0.12rem;
+  margin-bottom: 0.10rem;
   letter-spacing: 0.5px;
 }
+
+/* -- NEW: Line above nav bar -- */
+.hr-nav-divider {
+  border: none;
+  border-top: 1.5px solid #1F242E;
+  width: 48%;
+  margin: 1.0rem auto 1.6rem auto;
+  opacity: 0.70;
+}
+
+/* -- End new line -- */
 
 .intro {
   font-size: 20px;
@@ -101,6 +112,7 @@ main {
   border-radius: 5px;
   background: transparent;
 }
+
 
 
 /* ON RESEARCH/HOME ONLY: images get padding */
