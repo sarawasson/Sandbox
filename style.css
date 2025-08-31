@@ -152,7 +152,7 @@ body:not(.tutoring-page):not(.medical-page) .content-block .image img {
 .portal-underline.research { background: #78B1CC; }
 .portal-underline.tutoring { background: #77C6EE; }
 .portal-underline.medical { background: #A7B7A3; }
-.portal-underline.ai-educ { background: #FFAB91; }
+.portal-underline.ai-educ { background: #FDB07D; }
 
 .portal-card a:hover + .portal-underline,
 .portal-card a:focus + .portal-underline {
