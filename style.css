@@ -1,4 +1,4 @@
-/* === CSS 47 === */
+/* === CSS 48 === */
 
 /* === Page Background Classes === */
 body {
@@ -56,13 +56,31 @@ h2 {
   padding-bottom: 0rem;
 }
 
-/* -- ULTRA subtle, short, faint line above nav bar -- */
-.hr-nav-divider {
-  border: none;
-  border-top: 1px solid rgba(31,36,46,0.10); /* 10% opacity: nearly invisible */
-  width: 36px;          /* Tiny! */
-  margin: 0.1rem auto 0.6rem auto; /* tight vertical gap */
-  border-radius: 1px;
+/* === Crystal Agate Divider === */
+
+.crystal-divider {
+  width: 110px;  /* You can adjust width as needed */
+  height: 12px;
+  margin: 0.5rem auto 1.1rem auto;
+  border-radius: 8px;
+  background: linear-gradient(90deg,
+    #bfdcf3 0%,
+    #c7e9f7 18%,
+    #e0f7fa 35%,
+    #f4f2ed 52%,
+    #f7d7c4 70%,
+    #e3e9e0 86%,
+    #bfdcf3 100%
+  );
+  box-shadow: 0 1px 8px 0 rgba(159, 190, 211, 0.19), 0 0.5px 0.5px 0 rgba(210, 234, 250, 0.09);
+  opacity: 0.92;
+  /* Optional: faint border for 3D glassy edge */
+  border: 0.6px solid rgba(143, 170, 186, 0.21);
+  transition: box-shadow 0.2s;
+}
+.crystal-divider:hover {
+  box-shadow: 0 2px 14px 0 rgba(159, 190, 211, 0.28), 0 1px 2px 0 rgba(210, 234, 250, 0.18);
+  opacity: 1;
 }
 
 /* -- End new line -- */
