@@ -1,4 +1,5 @@
-/* === CSS 46 === */
+/* === CSS 47 === */
+
 /* === Page Background Classes === */
 body {
   font-family: 'Cormorant Garamond', serif;
@@ -35,31 +36,35 @@ body.ai-educ-page {
 /* === Typography & Layout === */
 header {
   text-align: center;
-  padding: 0.18rem 1rem 0rem 1rem;   /* ULTRA TIGHT gap */
+  padding: 0.15rem 1rem 0rem 1rem; /* ULTRA TIGHT gap above */
 }
 
 h1 {
   font-size: 42px;
   font-weight: 600;
-  margin-bottom: 0.01rem;  /* Zero gap below title */
+  margin-bottom: 0rem; /* NO gap below title */
+  padding-bottom: 0rem; /* NO gap below title */
 }
 
 h2 {
   font-size: 27px;
   font-weight: 400;
-  margin-bottom: 0.07rem; /* Ultra tight gap below tagline */
+  margin-top: 0rem; /* NO gap above tagline */
+  margin-bottom: 0rem; /* NO gap below tagline */
   letter-spacing: 0.5px;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
 
-/* -- NEW: Soft, short, subtle line above nav bar -- */
+/* -- ULTRA subtle, short, faint line above nav bar -- */
 .hr-nav-divider {
   border: none;
-  border-top: 1px solid #A7B7A3;  /* Very pale */
-  width: 56px;                    /* Short & elegant */
-  margin: 0.22rem auto 1.0rem auto; /* Tight vertical gap */
-  opacity: 0.21;                  /* Extra subtle fade */
+  border-top: 1px solid rgba(31,36,46,0.10); /* 10% opacity: nearly invisible */
+  width: 36px;          /* Tiny! */
+  margin: 0.1rem auto 0.6rem auto; /* tight vertical gap */
   border-radius: 1px;
 }
+
 /* -- End new line -- */
 
 .intro {
@@ -105,7 +110,7 @@ main {
 /* Default: NO padding on images (tutoring, medical, etc) */
 .content-block .image img {
   width: 100%;
-  max-width: 400px;
+  max-width: 400px;  /* Increased from 200px */
   height: auto;
   display: block;
   margin: 0;
