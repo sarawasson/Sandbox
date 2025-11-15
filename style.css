@@ -1,4 +1,4 @@
-/* === CSS 50 === */
+/* === CSS === */
 
 /* === Page Background Classes === */
 body {
@@ -19,7 +19,7 @@ body {
 }
 
 /* Tutoring: Sky background*/
-body.tutoring-page {
+body.tutor-page {
   background-image: url('sky.png');
 }
 
@@ -56,8 +56,6 @@ h2 {
   padding-bottom: 0rem;
 }
 
-/* === Crystal Divider === */
-
 .crystal-divider {
   width: 100%;
   max-width: 650px; /* controls max width—adjust as needed */
@@ -84,7 +82,6 @@ h2 {
   box-shadow: 0 2px 14px 0 rgba(120, 170, 220, 0.22), 0 1px 2px 0 rgba(210, 234, 250, 0.16);
   opacity: 1;
 }
-
 /* -- End crystal divider -- */
 
 .intro {
@@ -140,7 +137,7 @@ main {
 }
 
 /* ON RESEARCH/HOME ONLY: images get padding */
-body:not(.tutoring-page):not(.medical-page) .content-block .image img {
+body:not(.tutor-page):not(.medical-page) .content-block .image img {
   padding: 1.2rem;
 }
 
@@ -186,7 +183,7 @@ body:not(.tutoring-page):not(.medical-page) .content-block .image img {
 }
 
 .portal-underline.research { background: #78B1CC; }
-.portal-underline.tutoring { background: #77C6EE; }
+.portal-underline.tutor { background: #77C6EE; }
 .portal-underline.medical { background: #A7B7A3; }
 .portal-underline.ai-educ { background: #FDB07D; }
 
